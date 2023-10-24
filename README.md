@@ -36,7 +36,7 @@ Eye can be installed using wally. Add Eye to your `wally.toml`:
 
 ```toml
 [dependencies]
-Eye = "red-blox/eye"
+Eye = "red-blox/eye@0.1.0"
 ```
 
 Run `wally install` to install all dependencies into the `Packages` directory.
