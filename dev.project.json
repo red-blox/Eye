@@ -1,0 +1,14 @@
+{
+	"name": "EyeDev",
+	"tree": {
+		"$className": "DataModel",
+		"StarterPlayer": {
+			"StarterPlayerScripts": {
+				"$path": "Test",
+				"Eye": {
+					"$path": "lib"
+				}
+			}
+		}
+	}
+}
