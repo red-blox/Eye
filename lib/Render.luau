@@ -5,18 +5,25 @@ local Scope = require(script.Parent.Scope)
 
 local UpdateSet: { [Type.ScopeNode]: boolean } = {}
 
+local Logging = false
 local Tab = 0
 
 local function TabIn()
-	Tab += 1
+	if Logging then
+		Tab += 1
+	end
 end
 
 local function TabOut()
-	Tab -= 1
+	if Logging then
+		Tab -= 1
+	end
 end
 
 local function Log(Text: string)
-	print(string.rep("\t", Tab) .. Text)
+	if Logging then
+		print(string.rep("\t", Tab) .. Text)
+	end
 end
 
 local function Mark(self: Type.ScopeNode?)
